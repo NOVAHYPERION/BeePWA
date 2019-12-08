@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <link rel="manifest" href="templates/manifest.json"/>
+    <link rel="icon" href="templates/bebebebe.png"/>
+    <script src = "templates/main.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="templates/jquery.slim.min.js"></script>
+    <script src="templates/popper.min.js"></script>
+    <script src="templates/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="templates/bootstrap.min.css">
+    <link rel="stylesheet" href="templates/styles.css">
+    <title>It's bee time!</title>
+    <script>
+    var num = 0;
+        function clickCounter() {
+            num += 1;
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount) {
+                    localStorage.clickcount = Number(localStorage.clickcount)+1;
+                    } else {
+                        localStorage.clickcount = 1;
+                    }
+                        document.getElementById("PrintVal").innerHTML = "You have played ABBA " + localStorage.clickcount + " times!! Take a chance on me! :) ";
+                        document.getElementById("CurVal").innerHTML = "You've played ABBA " + num + " This many times this run!";
+                    }
+            }
+            function PlaySound() {
+            clickCounter();
+            var path = "templates/ABBA.Take%20a%20chance%20on%20me%20K.mp3"
+            var snd = new Audio(path);
+            snd.pause();
+            snd.currentTime=0;
+            snd.play();
+        }
+    </script>
+  </head>
+
+    <body>
+        <div class ="container">
+            <nav class ="navbar navbar-expand-lg navbar-dark" role="navigation"> 
+                <a class ="navbar-brand"href="#">Save the bees!</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                    <span class = "navbar-toggler-icon">  </span>
+                </button>
+                    <div class = "collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class = "navbar-nav ml-auto">
+                            <li class= "nav-item">
+                                <a class="nav-link" href="index.html"> Main page </a>
+                            </li>
+                            <li class= "nav-item">
+                                <a class="nav-link" href="info.html"> Info </a>
+                            </li>
+                            <li class= "nav-item">
+                                <a class="nav-link" href="bees.html"> New York Native Bees </a>
+                            </li>
+                            <li class= "nav-item">
+                                <a class="nav-link" href="#"> Abba midi button page </a>
+                            </li>
+                        </ul>
+                    </div>
+            </nav>
+            <p id="PrintVal">Tap or click on the bee!</p>
+            <p id="CurVal"></p>
+            <img class = "bee img-fluid"src="templates/tranbee.png" onclick="PlaySound()">
+        </div>
+    </body>

@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="manifest" href="templates/manifest.json"/>
+    <link rel="icon" href="templates/bebebebe.png"/>
+    <script src = "templates/main.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="templates/jquery.slim.min.js"></script>
+    <script src="templates/popper.min.js"></script>
+    <script src="templates/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="templates/bootstrap.min.css">
+    <link rel="stylesheet" href="templates/styles.css">
+      <title>It's bee time!</title>   
+    <title>Save the bees!</title>
+      <script>
+          $(document).ready(function(){
+              $("button").click(function(){
+                $("#buttonScam").hide();
+                  $("#realTime").show();
+                  $("#realrealTime").show();
+              });
+            });
+      </script>
+  </head>
+<body>
+        <div class ="container">
+            <nav class ="navbar navbar-expand-lg navbar-dark" role="navigation"> 
+                <a class ="navbar-brand"href="#">Save the bees!</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                    <span class = "navbar-toggler-icon">  </span>
+                </button>
+                    <div class = "collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class = "navbar-nav ml-auto">
+                            <li class= "nav-item">
+                                <a class="nav-link" href="index.html"> Main page </a>
+                            </li>
+                            <li class= "nav-item">
+                                <a class="nav-link" href="#"> Info </a>
+                            </li>
+                            <li class= "nav-item">
+                                <a class="nav-link" href="bees.html"> New York Native Bees </a>
+                            </li>
+                            <li class= "nav-item">
+                                <a class="nav-link" href="offline.html"> Abba midi button page </a>
+                            </li>
+                        </ul>
+                    </div>
+            </nav>
+            <h1 class="text-center">Bees are in danger, and they need your help!</h1>
+            <p class = "text-left">All you need to do is enter the 13 digits on the front of your credit card, the month and year of expiration, and those 12 funny digits on the back!</p>
+            <div class ="row">
+                <div class="col-sm">
+                    <input  type="text" name="13 digits" class="text" placeholder="13 digits" maxlength="13">
+                </div>
+                <div class="col-sm">
+                    <input  type="text" name="Expir Month" class="text" placeholder="Expiration Month" maxlength = "1">
+                </div>
+                <div class="col-sm">
+                    <input  type="text" name="Expir Year" class="text" placeholder="Expiration Year" maxlength = "1">
+                </div>
+                <div class="col-sm">
+                    <button id="buttonScam" class="btn btn-primary">Submit!</button>
+                </div>
+            </div>
+            <p class="text-center" id="realTime">Whoa there cowpoke! You're awful willing to just throw your information places! How about instead of inserting your credit card information in some random website, you sponsor a beehive! That'll really help some bees!</p>
+            <a  href="https://thehoneybeeconservancy.org/sponsor-a-hive" id="realrealTime">Click here to find out more about sponsoring a hive!</a>
+            <h2 class ="text-center"> You can also help by planting bee friendly plants native to your area!</h2>
+            <a class="text-center" href="https://xerces.org/pollinator-conservation/plant-lists/">Click here to find some resources!</a>
+            <p class= "text-center">Whoa!! Careful there!! If you scroll over this bee she'll get fiesty!!</p>
+            <img id= "shakey"class="img-fluid" src="templates/SweatBee.jpg">
+            
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "buncha bees",
+  "short_name": "buzz",
+  "display": "fullscreen",
+  "start_url": "../offline.html",
+  "theme_color": "#ffff00",
+  "background_color": "#111111",
+  "icons": [
+    {
+      "src": "bebebe.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+        "src" : "bebebebe.png",
+        "sizes":"512x512",
+        "type":"image/png"
+    }
+  ]
+}

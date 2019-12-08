@@ -1,0 +1,83 @@
+.bee:active {
+  transform: translateY(4px);
+  animation: spin 0.5s;
+}
+@keyframes spin{
+    50% { transform: rotate(-10deg); }
+  60% { transform: rotate(-10deg); }
+  70% { transform: rotate(-10deg); }
+  80% { transform: rotate(-10deg); }
+  90% { transform: rotate(-10deg); }
+  100% { transform: rotate(-10deg); }
+}
+#shakey:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s; 
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite; 
+}
+@keyframes shake {
+  50% { transform: translate(-3px, 6px) rotate(-1deg); }
+  60% { transform: translate(-9px, 2px) rotate(0deg); }
+  70% { transform: translate(300px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.text
+{
+    
+}
+
+#realTime
+{
+    display: none;
+}
+#realrealTime
+{
+    display:none;
+}
+
+.btn-primary ,.btn,.btn-lg
+{ 
+    background-color: yellow; 
+    color: black;
+}
+.navbar-dark,navbar, navbar-expand-lg
+{
+    background-color: black;
+    color: black;
+}
+#canvas{
+    width:100%;
+}
+
+.jumbotron
+{   
+    color:black;
+    background-color:transparent;
+    outline:none;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("bee.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
+
